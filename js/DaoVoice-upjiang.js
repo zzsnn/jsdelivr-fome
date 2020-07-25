@@ -41,3 +41,8 @@ var menus_expand = mobile_sidebar_menus.getElementsByClassName("menus-expand");
 for (var i = 0; i < menus_item_child.length; i++) {
   menus_item_child[i].style.display = "none";
 }
+
+/*UP酱*/
+var top_up = "<img style='max-width: 280%;transform: translate(-90px,-60px);' src='https://cdn.jsdelivr.net/gh/TheFine/theFine.github.io/img/01cecc5.gif' title='回到顶部' >";
+/*添加到返回顶部按钮下*/
+document.getElementById("go-up").innerHTML += top_up;
