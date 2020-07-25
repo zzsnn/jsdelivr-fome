@@ -137,9 +137,9 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|ios|Nokia|Black Berry|M
 		/**
 		 * 本地调试使用
 		 */
-		var webURL = 'https://music.m0x.cn/';
+		var webURL = '';
 		var keyId = $("#xplayer").attr("key");
-		console.log("本站由梨花带雨播放器驱动：" + webURL);
+		console.log("" + webURL);
 		localStorage.setItem("myhkLoad", "true");
 		$("head").append("<link rel=\"stylesheet\" type=\"text/css\" href=\""+webURL+"/Static/player/player.css\">");
 		var span = document.createElement("span");
