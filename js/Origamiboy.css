@@ -134,3 +134,16 @@ p.top {
 .github-badge .bg-lightgrey, .github-badge .bg-lightgray {
     background-color:#9f9f9f !important;
 }
+
+/*当前访问用户*/
+span.p.red, p.p.red {
+    color: #ff0b00
+}
+
+span.p.cyan, p.p.cyan {
+    color: #ff00bc
+}
+
+span.p.blue, p.p.blue {
+    color: #0014ff
+}
