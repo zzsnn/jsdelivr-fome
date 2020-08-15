@@ -148,11 +148,13 @@ $('.progress-num').text(percentage)
 $('.sidebar-toc__progress-bar').animate({width:percentage+'%'},100)}
 const isAnchor=GLOBAL_CONFIG.isanchor
 const updateAnchor=function(anchor){if(window.history.replaceState&&anchor!==window.location.hash){window.history.replaceState(undefined,undefined,anchor)}}
+const versionBiggerFive=GLOBAL_CONFIG.hexoversion.split('.')[0]>=5
 const findHeadPosition=function(top){if($('.toc-link').length===0){return false}
 const list=$('#article-container').find('h1,h2,h3,h4,h5,h6')
 let currentId=''
 list.each(function(){const head=$(this)
-if(top>head.offset().top-25){currentId='#'+encodeURI($(this).attr('id'))}})
+if(top>head.offset().top-25){if(versionBiggerFive)currentId='#'+encodeURI($(this).attr('id'))
+else currentId='#'+$(this).attr('id')}})
 if(currentId===''){$('.toc-link').removeClass('active')
 $('.toc-child').hide()}
 const currentActive=$('.toc-link.active')
