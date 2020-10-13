@@ -199,3 +199,40 @@ span.p.blue, p.p.blue {
     background: rgba(255, 255, 255, 0.0);
     padding: 0px;
 }
+
+/*首页文章标题下标签样式*/
+@media screen and (max-width: 768px) {
+    #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap a {
+        color: #858585;
+    }
+    #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .sticky {
+        color: #ff7242;
+    }
+    .fa-tag:before {
+        color: var(--page-bg);
+    }
+    .fa-inbox:before {
+        color: #F4A460;
+    }
+    .fa-history:before {
+        color: #ff8587;
+    }
+    .fa-calendar-alt:before {
+        color: var(--page-bg);
+    }
+    .article-meta {
+        display: inline-block;
+        background-image: none;
+        color: #858585;
+        padding-left: 0rem;
+    }
+    .post-meta-date {
+        display: inline-block;
+        background-image: none;
+        color: #858585;
+        padding-left: 0rem;
+    }
+    .article-meta span {
+        padding-left: 0rem;
+    }
+}
